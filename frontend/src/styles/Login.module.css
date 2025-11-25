@@ -1,0 +1,117 @@
+/* Import Bebas Neue Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Full-Screen Background Image */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Full width */
+    background: url('/public/assets/4.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Semi-Transparent Login Form */
+.loginForm {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.85); /* Softer transparency */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #ff7f50;
+    backdrop-filter: blur(8px); /* Blurred background effect */
+}
+
+/* Form heading */
+.heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #d35400; /* Deep orange */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Input container */
+.inputContainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Icons */
+.inputIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #e67e22; /* Orange accent */
+}
+
+/* Input fields */
+.input {
+    width: 100%;
+    padding: 12px 40px 12px 35px;
+    border: 2px solid #f4a261; /* Soft orange */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #ff7f50;
+}
+
+/* Login button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff7f50, #ff5733);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #ff5733, #e74c3c);
+}
+
+/* Register link */
+.registerLink {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.registerLink a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .loginForm {
+        width: 90%;
+        padding: 25px;
+    }
+    .input {
+        padding: 12px 35px;
+    }
+}

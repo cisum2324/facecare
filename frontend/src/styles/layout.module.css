@@ -1,0 +1,80 @@
+/* General Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fefcf9, #f6f1eb); /* Soft skincare background */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Floating Navigation Bar (Lower Left - Horizontal) */
+.nav {
+    position: fixed;
+    bottom: 20px;  /* Positioned at the bottom */
+    left: 20px;    /* Aligned to the left */
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around;
+    align-items: center;
+    width: auto;  /* Flexible width */
+    background: white;
+    padding: 10px 15px;
+    border-radius: 15px; /* Soft rounded edges */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Items */
+.navItem {
+    text-decoration: none;
+    color: #7a8a97; /* Soft neutral tone */
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px; /* Spacing between items */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Navigation Icons */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    color: #a3b1b7;
+}
+
+/* Hover Effect */
+.navItem:hover {
+    color: #3e5c50; /* Natural deep green */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Active State */
+.navItem.active {
+    color: #3e5c50; /* Elegant green */
+    font-weight: bold;
+}
+
+.navItem.active .icon {
+    color: #3e5c50;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .nav {
+        left: 10px;
+        bottom: 10px;
+        padding: 8px 12px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navItem {
+        font-size: 11px;
+        margin: 0 10px;
+    }
+}

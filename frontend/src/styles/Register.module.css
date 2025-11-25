@@ -1,0 +1,158 @@
+/* Import Bebas Neue Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Full-Screen Background Image */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('/public/assets/4.png') no-repeat center center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Register Form Box */
+.registerForm {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.85); /* Light transparency */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #ff7f50;
+    backdrop-filter: blur(8px); /* Blurred effect */
+    position: relative;
+    z-index: 2;
+}
+
+/* Form Heading */
+.heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Input Container */
+.inputContainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input {
+    width: 100%;
+    padding: 12px 40px 12px 35px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #ff7f50;
+}
+
+/* Icons */
+.inputIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #ff7f50;
+}
+
+/* Register Button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff7f50, #ff6347);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #ff6347, #e5533c);
+}
+
+/* Login Link */
+.loginLink {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.loginLink a {
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content Box */
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Modal Button */
+.modalButton {
+    background: #ff7f50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.modalButton:hover {
+    background: #ff5733;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .registerForm {
+        width: 90%;
+        padding: 25px;
+    }
+    .input {
+        padding: 12px 35px;
+    }
+}

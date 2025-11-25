@@ -1,0 +1,80 @@
+.aboutUs {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 40px;
+    min-height: 100vh;
+    background: url('/public/assets/3.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 18px;
+    color: #444;
+}
+
+.highlight {
+    color: black;
+}
+
+/* Section Styling */
+.section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8); /* Adding slight white background for readability */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 20px;
+}
+
+.featureGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}

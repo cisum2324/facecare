@@ -1,0 +1,98 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Sidebar */
+.side-panel {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Main Content */
+.admin-main {
+    flex: 1;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Table Styling */
+.admin-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.loading-text {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column;
+    }
+
+    .side-panel {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .admin-main {
+        margin: 10px;
+    }
+}

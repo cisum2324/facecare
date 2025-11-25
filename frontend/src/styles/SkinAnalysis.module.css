@@ -1,0 +1,279 @@
+/* Full-page container with background image */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/public/assets/8.png') no-repeat center center/cover;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcomeText {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.skinAnalysis {
+  background: #a96b6b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagePreview {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.uploadLabel, .button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffafbd;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boxButton {
+  width: 160px;
+  height: 50px;
+  background: #ffafbd;
+}
+
+.boxButton:hover {
+  background: #ff758c;
+  transform: scale(1.05);
+}
+
+
+/* Skin analysis form */
+.skinAnalysis {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.9); /* Soft white with transparency */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Subtle blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.6); /* Light border */
+}
+
+/* Image Preview */
+.imagePreview {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  margin: 15px auto;
+  border: 2px solid #ee9ca7;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/public/assets/bg2.png') no-repeat center center;
+  background-size: cover;
+  background-color: #fff8f3;
+  position: relative;
+}
+
+/* Remove background when image is uploaded */
+.imagePreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Upload Button */
+.uploadLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ee9ca7;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.uploadLabel:hover {
+  background: #d47d92;
+}
+
+/* Analyze button */
+.analyzeButton {
+  background: #c7c5f4;
+  color: white;
+  font-weight: bold;
+}
+
+.analyzeButton:hover {
+  background: #8e9dff;
+}
+
+.resultsContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+  border-left: 5px solid #8e9dff;
+  backdrop-filter: blur(5px);
+  
+  /* Enable scrolling */
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+.resultsContainer h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #444;
+}
+
+.resultsContainer p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Skin tone result */
+.skinToneResult {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Logout Section */
+/* Logout Section */
+.welcomeLogoutSection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  background: rgb(249, 186, 205);
+  padding: 10px 20px;
+  border-radius: 50px; /* Oval shape */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Loading Overlay */
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Spinner Animation */
+.loadingSpinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading Text */
+.loadingText {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Typewriter Effect Container */
+.typewriterContainer {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+  border-left: 4px solid #8e9dff;
+}
+
+/* Typewriter Effect Text */
+.typewriterText {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  overflow: hidden;
+  border-right: 2px solid #8e9dff;
+  animation: blinkCursor 0.8s infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}
+
+.cameraContainer {
+  text-align: center;
+  position: relative;
+}
+
+.cameraFeed {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  /* Ensure the video is flipped for a natural selfie feel */
+  transform: scaleX(-1);
+}
+
+.captureButton, .closeCameraButton {
+  margin: 10px;
+}
+

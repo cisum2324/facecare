@@ -1,0 +1,142 @@
+/* Full-screen background */
+.container {
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Verification Card */
+.card {
+    display: flex;
+    flex-direction: column; /* Stack children (inputs, button) properly */
+    align-items: center; /* Align textboxes and content */
+    max-width: 500px;
+    width: 90%;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    backdrop-filter: blur(12px);
+}
+
+/* Input Field */
+.input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Ensure input fields take up full width inside card */
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button */
+.button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Message Box */
+.message {
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Success Message */
+.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Error Message */
+.error {
+    background: #ffebee;
+    color: #d32f2f;
+}
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content Box */
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Modal Icon */
+.modalIcon {
+    font-size: 40px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Modal Button */
+.modalButton {
+    background: #4caf50;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.modalButton:hover {
+    background: #388e3c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
